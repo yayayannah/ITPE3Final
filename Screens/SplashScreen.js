@@ -15,11 +15,11 @@ const SplashScreen = ({navigation}) => {
     }, {navigation});
 
     return (
-        <View style={styles.container} >
+        <View style={styles.splashContainer} >
         
-        <Image source={require('../assets/1.png')} 
+        <Image source={require('../assets/splashScreen.png')} 
                 style={styles.splash}
-                resizeMode='cover'
+                resizeMode='cover'  
         />
 
         </View>
