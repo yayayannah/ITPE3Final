@@ -1,12 +1,16 @@
 import React from 'react';
-import {View, ActivityIndicator} from 'react-native';
+import {View, ActivityIndicator, Text} from 'react-native';
 import styles from '../Styles/Styles';
+import LottieView from 'lottie-react-native';
 
 function LoadingScreen({ navigation }) {
 
     return (
-        <View style={[styles.loadingContainer, styles.horizontal]}>
-            <ActivityIndicator size="large" color="#B4B4B8" />
+        <View style={styles.container}>
+            <View style={styles.gifContainer} >
+                <LottieView style={{flex: 1}} source={require('../assets/animatedLoader.json')} autoPlay loop />
+                <Text style={styles.loadText} > Loading... </Text>
+            </View>
         </View>
 
 
